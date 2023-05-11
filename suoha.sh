@@ -64,6 +64,7 @@ case "$(uname -m)" in
 	exit
 	;;
 esac
+mkdir xray
 unzip -d xray xray.zip
 chmod +x cloudflared-linux xray/xray
 rm -rf xray.zip
@@ -229,6 +230,7 @@ case "$(uname -m)" in
 	exit
 	;;
 esac
+mkdir xray
 unzip -d xray xray.zip
 chmod +x cloudflared-linux xray/xray
 mv cloudflared-linux /opt/suoha/
